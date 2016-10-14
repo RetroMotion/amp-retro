@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: AMP
- * Description: Add AMP support to your WordPress site.
- * Plugin URI: https://github.com/automattic/amp-wp
+ * Plugin Name: AMP - Retro
+ * Description: RetroMotion version of Automattic's AMP plugin
+ * Plugin URI: https://github.com/RetroMotion/amp-retro
  * Author: Automattic
- * Author URI: https://automattic.com
- * Version: 0.4.2
+ * Author URI: https://retromotion.co
+ * Version: 0.5.0
  * Text Domain: amp
  * Domain Path: /languages/
  * License: GPLv2 or later
