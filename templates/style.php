@@ -120,7 +120,7 @@ blockquote p:last-child {
 	font-weight: 400;
 	margin: 0 auto;
 	max-width: calc(840px - 32px);
-	padding: .875em 16px;
+	padding: 10px;
 	position: relative;
 }
 
