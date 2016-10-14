@@ -163,7 +163,7 @@ blockquote p:last-child {
 }
 
 .amp-wp-title {
-	color: <?php echo sanitize_hex_color( $text_color ); ?>;
+	color:  #337ab7;
 	display: block;
 	flex: 1 0 100%;
 	font-weight: 900;

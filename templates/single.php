@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 	<?php do_action( 'amp_post_template_head', $this ); ?>
 	<style amp-custom>
 		<?php $this->load_parts( array( 'style' ) ); ?>
@@ -11,6 +12,21 @@
 </head>
 
 <body class="<?php echo esc_attr( $this->get( 'body_class' ) ); ?>">
+	<amp-analytics type="googleanalytics" id="analytics1">
+		<script type="application/json">
+		{
+		  "vars": {
+		    "account": "UA-71641373-1"
+		  },
+		  "triggers": {
+		    "trackPageview": {
+		      "on": "visible",
+		      "request": "pageview"
+		    }
+		  }
+		}
+		</script>
+	</amp-analytics>
 
 <?php $this->load_parts( array( 'header-bar' ) ); ?>
 
@@ -18,7 +34,7 @@
 
 	<header class="amp-wp-article-header">
 		<h1 class="amp-wp-title"><?php echo wp_kses_data( $this->get( 'post_title' ) ); ?></h1>
-		<?php $this->load_parts( apply_filters( 'amp_post_article_header_meta', array( 'meta-author', 'meta-time' ) ) ); ?>
+		<?php $this->load_parts( apply_filters( 'amp_post_article_header_meta', array( 'meta-author') ) ); ?>
 	</header>
 
 	<?php $this->load_parts( array( 'featured-image' ) ); ?>
@@ -28,7 +44,7 @@
 	</div>
 
 	<footer class="amp-wp-article-footer">
-		<?php $this->load_parts( apply_filters( 'amp_post_article_footer_meta', array( 'meta-taxonomy', 'meta-comments-link' ) ) ); ?>
+		<?php $this->load_parts( apply_filters( 'amp_post_article_footer_meta', array('meta-comments-link' ) ) ); ?>
 	</footer>
 
 </article>
