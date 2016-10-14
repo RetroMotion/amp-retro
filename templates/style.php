@@ -133,12 +133,11 @@ blockquote p:last-child {
 
 .amp-wp-header .amp-wp-site-icon {
 	/** site icon is 32px **/
-	background-color: <?php echo sanitize_hex_color( $header_color ); ?>;
-	border: 1px solid <?php echo sanitize_hex_color(  $header_color ); ?>;
-	border-radius: 50%;
-	position: absolute;
 	right: 18px;
-	top: 10px;
+	height: 27px;
+	width: 32px;
+	display:inline-block;
+  vertical-align: middle;
 }
 
 /* Article */
@@ -206,7 +205,13 @@ blockquote p:last-child {
 }
 
 .amp-wp-posted-on {
-	text-align: right;
+	float: right;
+	font-size: 12px;
+	background: #fff;
+	color: #337ab7 !important;
+	font-weight: bold;
+	border-radius: 5px;
+	padding: 0px 10px;
 }
 
 /* Featured image */
