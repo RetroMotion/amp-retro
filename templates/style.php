@@ -208,7 +208,7 @@ blockquote p:last-child {
 	float: right;
 	font-size: 12px;
 	background: #fff;
-	color: #337ab7 !important;
+	color: #337ab7;
 	font-weight: bold;
 	border-radius: 5px;
 	padding: 0px 10px;
